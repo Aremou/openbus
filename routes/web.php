@@ -58,8 +58,8 @@ Route::prefix('ticket')->group(function () {
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     Route::namespace('Auth')->group(function () {
-        Route::get('/', 'LoginController@showLoginForm')->name('login');
-        Route::post('/', 'LoginController@login')->name('login');
+        Route::get('login', 'LoginController@showLoginForm')->name('login');
+        Route::post('login', 'LoginController@login')->name('login');
         Route::get('logout', 'LoginController@logout')->name('logout');
         // Admin Password Reset
         Route::get('password/reset', 'ForgotPasswordController@showLinkRequestForm')->name('password.reset');

@@ -51,7 +51,7 @@ $content = getContent('contact.content', true);
         <div class="header-bottom-area">
             <div class="logo">
                 <a href="{{ route('home') }}">
-                    <img src="{{ getImage(imagePath()['logoIcon']['path'].'/logo.png') }}" alt="@lang('Logo')">
+                    <img src="{{ getImage(imagePath()['logoIcon']['path'].'/logo.png') }}" alt="@lang('Logo')" height="80" width="80">
                 </a>
             </div> <!-- Logo End -->
             <ul class="menu">
